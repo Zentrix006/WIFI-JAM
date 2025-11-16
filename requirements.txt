@@ -1,0 +1,9 @@
+# Main GUI Framework
+pyqt5
+# Graphing Library
+matplotlib 
+# Core Networking Libraries
+scapy
+netifaces
+python-nmap
+mac-vendor-lookup

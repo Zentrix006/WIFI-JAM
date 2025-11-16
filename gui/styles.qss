@@ -1,0 +1,101 @@
+/* styles.qss - Jhacker Motivated Theme */
+
+QWidget {
+    background-color: #2e3440; /* Nord Darkest */
+    color: #eceff4;           /* Nord Lightest */
+    font-family: "JetBrains Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+}
+
+QLabel {
+    color: #d8dee9; 
+}
+
+QLabel#title_label {
+    background-color: #3b4252; /* Nord Dark */
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    color: #8fbcbb; /* Nord Teal/Cyan - Primary Accent */
+    border: 1px solid #4c566a;
+}
+
+/* Base Button Style */
+QPushButton {
+    background-color: #5e81ac; /* Nord Blue */
+    color: #eceff4;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+QPushButton:hover {
+    background-color: #81a1c1; /* Lighter Nord Blue */
+}
+
+QPushButton:pressed {
+    background-color: #4c566a; 
+}
+
+/* Specific Action Colors */
+QPushButton[text="Scan Network (Full Recon)"] {
+    background-color: #a3be8c; /* Nord Green - Primary Action */
+    color: black;
+}
+QPushButton[text="Inject ARP Test"] {
+    background-color: #bf616a; /* Nord Red - High Risk Action */
+}
+QPushButton[text="Launch Live Tools (Wireshark)"] {
+    background-color: #88c0d0; /* Nord Cyan - External Tool */
+}
+QPushButton[text="MITM/Proxy"] {
+    background-color: #b48ead; /* Nord Purple - Bettercap */
+}
+
+
+QComboBox {
+    border: 1px solid #4c566a;
+    border-radius: 3px;
+    padding: 5px;
+    background: #3b4252;
+    selection-background-color: #88c0d0;
+}
+
+QTableWidget {
+    background-color: #3b4252;
+    alternate-background-color: #434c5e;
+    border: 1px solid #4c566a;
+    gridline-color: #4c566a;
+}
+
+QTableWidget::horizontalHeader::section {
+    background-color: #4c566a;
+    color: #eceff4;
+    padding: 8px;
+    border: 1px solid #4c566a;
+}
+
+QTextEdit {
+    background-color: #3b4252;
+    border: 1px solid #4c566a;
+    padding: 8px;
+}
+
+QTabWidget::pane { /* The window below the tabs */
+    border: 1px solid #4c566a;
+    background-color: #3b4252; 
+}
+
+QTabBar::tab {
+    background: #4c566a;
+    color: #eceff4;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+QTabBar::tab:selected {
+    background: #5e81ac; /* Highlight active tab */
+    font-weight: bold;
+}
