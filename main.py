@@ -100,7 +100,7 @@ class Worker(QThread):
 class WifiJamGUI(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("WIFI-JAM: Red Team Asset Analyzer (Faculty Perfected)")
+        self.setWindowTitle("WIFI-JAM: Red Team BY ZENTRIX")
         self.setGeometry(100, 100, 1200, 750) 
         
         self.worker = None
@@ -113,7 +113,7 @@ class WifiJamGUI(QWidget):
         self.setLayout(self.layout)
 
         # Title (Jhacker motivated)
-        self.title_label = QLabel("WIFI-JAM: Red Team Intelligence Platform")
+        self.title_label = QLabel("WIFI-JAM: Check Your wifi")
         self.title_label.setAlignment(Qt.AlignCenter)
         self.title_label.setStyleSheet("font-size: 20pt; font-weight: bold; color: #8fbcbb;")
         self.layout.addWidget(self.title_label)
